@@ -1,0 +1,47 @@
+//Colors Padrão
+$color-primary: #701f38;
+$color-primary-light: #ffe1ea;
+$color-primary-dark: #4b1223;
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #e4e4e4;
+$color-grey-dark: #1f232c;
+$color-grey-dark-2: #434c63;
+$color-white: #fff;
+$color-black: #000;
+$color-menu: #701f38;
+$theme-filter: grayscale(0%);
+
+//Colors Customizado
+// $color-primary: #0582ca;
+// $color-primary-light: #d2f0ff;
+// $color-primary-dark: #0a2463;
+// $color-grey-light-1: #f7f7f7;
+// $color-grey-light-2: #eee;
+// $color-grey-dark: #1f232c;
+// $color-grey-dark-2: #434c63;
+// $color-white: #fff;
+// $color-black: #000;
+// $color-menu: #0582ca;
+// $theme-filter: grayscale(100%);
+
+//Font
+$default-font-size: 1.6rem;
+
+//Content Padding
+$content-padding: 0rem;
+
+//Images
+$background-logo: url(../../img/logo_branco.png);
+$background-login: linear-gradient(
+    to right bottom,
+    rgba($color-grey-dark, 1),
+    rgba($color-grey-dark, 0.8)
+  ),
+  url(../../img/architecture.jpg);
+
+$background-animation: url(../../img/login_loader.png);
+$background-animation-2: url(../../img/login_loader_color.png);
+
+//Shadow
+$box-shadow-1: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
