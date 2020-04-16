@@ -1,11 +1,11 @@
 import React from "react";
 import Chart from "react-apexcharts";
 
-export default function BarChart(props) {
+export default function LineChart(props) {
   const chart = {
     options: {
       chart: {
-        id: "basic-bar",
+        id: "basic-line",
       },
       xaxis: {
         categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
@@ -24,7 +24,7 @@ export default function BarChart(props) {
       <Chart
         options={chart.options}
         series={chart.series}
-        type="bar"
+        type="line"
         width="430"
       />
     </>
