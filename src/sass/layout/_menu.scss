@@ -6,6 +6,7 @@
   z-index: 999;
   transform: translateX(-25vw);
   transition: transform 0.5s;
+  box-shadow: $box-shadow-1;
 
   &--opened {
     transform: translateX(-15vw);
