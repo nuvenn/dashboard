@@ -1,5 +1,10 @@
 .main {
   width: 100%;
-  min-height: 100vh;
-  background-color: $color-grey-light-1;
+  padding-left: 5vw;
+  transition: all 0.5s;
+  will-change: transform, padding;
+
+  &--opened {
+    padding-left: 15vw;
+  }
 }

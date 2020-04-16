@@ -1,0 +1,17 @@
+.menu {
+  width: 30vw;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  z-index: 999;
+  transform: translateX(-25vw);
+  transition: transform 0.5s;
+
+  &--opened {
+    transform: translateX(-15vw);
+  }
+
+  &__button {
+    float: right;
+  }
+}
