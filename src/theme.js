@@ -10,6 +10,11 @@ const theme = createMuiTheme({
       main: "#701f38",
       light: "#dd87a2",
       dark: "#4b1223",
+    },
+    secondary: {
+      main: "#434c63",
+    },
+    common: {
       greyLight1: "#f7f7f7",
       greyLight2: "#eee",
       greyDark: "#1f232c",
@@ -17,9 +22,6 @@ const theme = createMuiTheme({
       colorWhite: "#fff",
       colorBlack: "#000",
       colorMenu: "#701f38",
-    },
-    secondary: {
-      main: "#434c63",
     },
   },
   overrides: {

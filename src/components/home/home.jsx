@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 
 import "../../sass/App.scss";
 import Container from "../layout/container";
+import Header from "../layout/header";
 import Box from "../layout/box";
 import Card from "../layout/card";
 import BarChart from "../charts/bar";
@@ -13,7 +14,8 @@ export default function Home() {
   return (
     <>
       <Container>
-        <Box>
+        <Header />
+        <Box marginTop={2}>
           <Grid item xs={12} md={6} lg={6} xl={4}>
             <Card>
               <BarChart />

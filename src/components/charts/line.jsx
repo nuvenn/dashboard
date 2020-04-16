@@ -14,7 +14,7 @@ export default function LineChart(props) {
     series: [
       {
         name: "series-1",
-        data: [30, 40, 45, 50, 49, 60, 70, 91],
+        data: [38, 40, 42, 45, 43, 40, 41, 45],
       },
     ],
   };
