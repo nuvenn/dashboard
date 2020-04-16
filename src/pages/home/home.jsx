@@ -1,7 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 
-import "../../sass/App.scss";
 import Header from "../../components/layout/header";
 import Box from "../../components/layout/box";
 import Card from "../../components/layout/card";

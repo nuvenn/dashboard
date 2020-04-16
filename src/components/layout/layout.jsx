@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "../../sass/App.scss";
+import "../../styles/App.scss";
 import Container from "../layout/container";
 import Menu from "../layout/menu";
 import Content from "../layout/content";
