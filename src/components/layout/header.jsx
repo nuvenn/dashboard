@@ -52,7 +52,6 @@ const useStyles = makeStyles((theme) => ({
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
     transition: theme.transitions.create("width"),
     width: "100%",
@@ -65,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SearchAppBar() {
+export default function SearchAppBar(props) {
   const classes = useStyles();
 
   return (
@@ -73,7 +72,7 @@ export default function SearchAppBar() {
       <AppBar className={classes.bar} position="static">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            Cockpit Ergon
+            {props.title}
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>

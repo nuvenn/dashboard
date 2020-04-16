@@ -5,7 +5,7 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
-import Home from "../components/home/home";
+import Home from "../pages/home/home";
 
 export default () => (
   <Router>
