@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.common.greyDark2,
     border: "none",
     boxShadow: "none",
-    padding: 10,
+    padding: 8.5,
   },
   title: {
     flexGrow: 1,
@@ -73,7 +73,7 @@ export default function SearchAppBar() {
       <AppBar className={classes.bar} position="static">
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            Cockpit
+            Cockpit Ergon
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
