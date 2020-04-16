@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import "../../sass/App.scss";
 import Container from "../layout/container";
 import Box from "../layout/box";
-import PieChart from "../charts/pie";
+import BarChart from "../charts/bar";
 import Card from "../layout/card";
 
 export default function Home() {
@@ -14,17 +14,17 @@ export default function Home() {
         <Box>
           <Grid item xs={12} md={6} lg={6} xl={4}>
             <Card>
-              <PieChart></PieChart>
+              <BarChart />
             </Card>
           </Grid>
           <Grid item xs={12} md={6} lg={6} xl={4}>
             <Card>
-              <PieChart></PieChart>
+              <BarChart />
             </Card>
           </Grid>
           <Grid item xs={12} md={6} lg={6} xl={4}>
             <Card>
-              <PieChart></PieChart>
+              <BarChart />
             </Card>
           </Grid>
         </Box>

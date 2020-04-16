@@ -6,6 +6,9 @@ import CardContent from "@material-ui/core/CardContent";
 const useStyles = makeStyles({
   root: {
     minWidth: 255,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
 });
 
