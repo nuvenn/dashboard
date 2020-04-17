@@ -1,18 +1,19 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
+import MenuIconOpen from "@material-ui/icons/KeyboardArrowRight";
+import MenuIconClose from "@material-ui/icons/KeyboardArrowLeft";
 
 export default function Menu(props) {
   return (
     <div className={props.open ? "menu menu--opened" : "menu"}>
-      <Button
-        className="menu__button"
-        onClick={() => props.toggleMenu()}
-        variant="contained"
-        color="primary"
-      >
-        Menu
-      </Button>
-      {/* <div className="menu__logo"></div> */}
+      <div className="menu__logo"></div>
+      <div className="menu__toggle">
+        <button
+          className="menu__toggle__button"
+          onClick={() => props.toggleMenu()}
+        >
+          {props.open ? <MenuIconClose /> : <MenuIconOpen />}
+        </button>
+      </div>
     </div>
   );
 }
