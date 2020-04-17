@@ -12,6 +12,7 @@ export default function Menu(props) {
       >
         Menu
       </Button>
+      {/* <div className="menu__logo"></div> */}
     </div>
   );
 }

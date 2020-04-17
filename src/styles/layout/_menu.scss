@@ -1,18 +1,27 @@
 .menu {
-  width: 30vw;
+  width: 30rem;
   min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   z-index: 999;
-  transform: translateX(-25vw);
+  transform: translateX(-20rem);
   transition: transform 0.5s;
   box-shadow: $box-shadow-1;
+  overflow: hidden;
 
   &--opened {
-    transform: translateX(-15vw);
+    transform: translateX(0rem);
   }
 
   &__button {
     float: right;
+  }
+
+  &__logo {
+    background-image: $menu-logo;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    height: 4rem;
+    width: 20rem;
   }
 }
