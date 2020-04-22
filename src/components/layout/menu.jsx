@@ -1,6 +1,7 @@
 import React from "react";
 import MenuIconOpen from "@material-ui/icons/KeyboardArrowRight";
 import MenuIconClose from "@material-ui/icons/KeyboardArrowLeft";
+import { NavLink } from "react-router-dom";
 
 export default function Menu(props) {
   return (
@@ -17,13 +18,13 @@ export default function Menu(props) {
       <nav className="menu__navigation">
         <ul>
           <li>
-            <button className="menu__button">Página Inicial</button>
+            <NavLink className="menu__button">Página Inicial</NavLink>
           </li>
           <li>
-            <button className="menu__button">Pagamentos</button>
+            <NavLink className="menu__button">Pagamentos</NavLink>
           </li>
           <li>
-            <button className="menu__button">Consultas</button>
+            <NavLink className="menu__button">Consultas</NavLink>
           </li>
         </ul>
       </nav>

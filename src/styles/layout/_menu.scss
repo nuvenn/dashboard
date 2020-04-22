@@ -58,26 +58,24 @@
       list-style: none;
     }
 
-    & li {
+    & a {
+      display: block;
       margin: 0.5rem;
-    }
-  }
+      font-size: $default-font-size;
+      padding: 2rem;
+      text-decoration: none;
+      background-color: transparent;
+      border: none;
+      color: $color-grey-light-3;
+      outline: none;
+      text-align: left;
+      border-radius: 2px;
+      cursor: pointer;
 
-  &__button {
-    width: 100%;
-    font-size: $default-font-size;
-    padding: 2rem;
-    background-color: transparent;
-    border: none;
-    color: $color-grey-light-3;
-    outline: none;
-    text-align: left;
-    border-radius: 2px;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $color-primary;
-      color: $color-white;
+      &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+      }
     }
   }
 }
