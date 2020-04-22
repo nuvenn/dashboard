@@ -11,7 +11,9 @@ import theme from "../../theme";
 export default function Menu(props) {
   return (
     <div className={props.open ? "menu menu--opened" : "menu"}>
-      <div className="menu__logo"></div>
+      <div
+        className={props.open ? "menu__logo" : "menu__logo menu__logo--little"}
+      ></div>
       <div className="menu__toggle">
         <button
           className="menu__toggle__button"

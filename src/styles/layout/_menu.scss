@@ -7,7 +7,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   z-index: 999;
-  transform: translateX(-20rem);
+  transform: translateX(-23.5rem);
   transition: transform 0.5s;
   box-shadow: $box-shadow-1;
 
@@ -49,6 +49,10 @@
     height: 5rem;
     margin: 1.5rem auto;
     width: 70%;
+
+    &--little {
+      background-size: 0;
+    }
   }
 
   &__navigation {
