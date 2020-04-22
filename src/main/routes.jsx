@@ -12,10 +12,10 @@ import Pagamentos from "../pages/pagamentos/pagamentos";
 export default () => (
   <Router>
     <Switch>
-      <Route path="/" exact component={Home}></Route>
+      <Route path="/home/" exact component={Home}></Route>
       <Route path="/consultas/" exact component={Consultas}></Route>
       <Route path="/pagamentos/" exact component={Pagamentos}></Route>
-      <Redirect from="*" to="/" />
+      <Redirect from="*" to="/home/" />
     </Switch>
   </Router>
 );

@@ -3,6 +3,8 @@ import MenuIconOpen from "@material-ui/icons/KeyboardArrowRight";
 import MenuIconClose from "@material-ui/icons/KeyboardArrowLeft";
 import { NavLink } from "react-router-dom";
 
+import theme from "../../theme";
+
 export default function Menu(props) {
   return (
     <div className={props.open ? "menu menu--opened" : "menu"}>
@@ -18,17 +20,38 @@ export default function Menu(props) {
       <nav className="menu__navigation">
         <ul>
           <li>
-            <NavLink to="/home/" className="menu__button">
-              Página Inicial
+            <NavLink
+              activeStyle={{
+                backgroundColor: theme.palette.primary.main,
+                color: theme.palette.common.colorWhite,
+              }}
+              to="/home/"
+              className="menu__button"
+            >
+              Pagina Inicial
             </NavLink>
           </li>
           <li>
-            <NavLink to="/pagamentos/" className="menu__button">
+            <NavLink
+              activeStyle={{
+                backgroundColor: theme.palette.primary.main,
+                color: theme.palette.common.colorWhite,
+              }}
+              to="/pagamentos/"
+              className="menu__button"
+            >
               Pagamentos
             </NavLink>
           </li>
           <li>
-            <NavLink to="/consultas/" className="menu__button">
+            <NavLink
+              activeStyle={{
+                backgroundColor: theme.palette.primary.main,
+                color: theme.palette.common.colorWhite,
+              }}
+              to="/consultas/"
+              className="menu__button"
+            >
               Consultas
             </NavLink>
           </li>
