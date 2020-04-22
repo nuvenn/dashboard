@@ -14,6 +14,19 @@ export default function Menu(props) {
           {props.open ? <MenuIconClose /> : <MenuIconOpen />}
         </button>
       </div>
+      <nav className="menu__navigation">
+        <ul>
+          <li>
+            <button className="menu__button">Página Inicial</button>
+          </li>
+          <li>
+            <button className="menu__button">Pagamentos</button>
+          </li>
+          <li>
+            <button className="menu__button">Consultas</button>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }

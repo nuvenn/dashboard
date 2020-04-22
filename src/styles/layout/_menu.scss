@@ -1,8 +1,7 @@
 .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 2rem;
+  align-items: stretch;
   width: 30rem;
   min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
@@ -45,9 +44,40 @@
 
   &__logo {
     background-image: $menu-logo;
-    background-size: 20rem;
+    background-size: 100%;
     background-repeat: no-repeat;
-    height: 4rem;
-    width: 20rem;
+    height: 5rem;
+    margin: 1.5rem auto;
+    width: 70%;
+  }
+
+  &__navigation {
+    margin-top: 20vh;
+
+    & ul {
+      list-style: none;
+    }
+
+    & li {
+      margin: 0.5rem;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    font-size: $default-font-size;
+    padding: 2rem;
+    background-color: transparent;
+    border: none;
+    color: $color-grey-light-3;
+    outline: none;
+    text-align: left;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+    }
   }
 }
