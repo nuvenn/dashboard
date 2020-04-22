@@ -18,13 +18,19 @@ export default function Menu(props) {
       <nav className="menu__navigation">
         <ul>
           <li>
-            <NavLink className="menu__button">Página Inicial</NavLink>
+            <NavLink to="/home/" className="menu__button">
+              Página Inicial
+            </NavLink>
           </li>
           <li>
-            <NavLink className="menu__button">Pagamentos</NavLink>
+            <NavLink to="/pagamentos/" className="menu__button">
+              Pagamentos
+            </NavLink>
           </li>
           <li>
-            <NavLink className="menu__button">Consultas</NavLink>
+            <NavLink to="/consultas/" className="menu__button">
+              Consultas
+            </NavLink>
           </li>
         </ul>
       </nav>
