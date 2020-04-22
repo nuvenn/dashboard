@@ -59,8 +59,10 @@
     }
 
     & a {
-      display: block;
-      margin: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.5rem;
       font-size: $default-font-size;
       padding: 2rem;
       text-decoration: none;

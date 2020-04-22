@@ -1,4 +1,7 @@
 import React from "react";
+import HomeIcon from "@material-ui/icons/Home";
+import PagamentosIcon from "@material-ui/icons/AttachMoney";
+import ConsultasIcon from "@material-ui/icons/ListAlt";
 import MenuIconOpen from "@material-ui/icons/KeyboardArrowRight";
 import MenuIconClose from "@material-ui/icons/KeyboardArrowLeft";
 import { NavLink } from "react-router-dom";
@@ -29,6 +32,7 @@ export default function Menu(props) {
               className="menu__button"
             >
               Pagina Inicial
+              <HomeIcon />
             </NavLink>
           </li>
           <li>
@@ -41,6 +45,7 @@ export default function Menu(props) {
               className="menu__button"
             >
               Pagamentos
+              <PagamentosIcon />
             </NavLink>
           </li>
           <li>
@@ -53,6 +58,7 @@ export default function Menu(props) {
               className="menu__button"
             >
               Consultas
+              <ConsultasIcon />
             </NavLink>
           </li>
         </ul>
