@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Routes from "./main/routes";
-import Providers from "./providers";
+import Providers from "./main/providers";
 
 ReactDOM.render(
   <Providers>

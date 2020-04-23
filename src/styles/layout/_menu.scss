@@ -4,6 +4,7 @@
   align-items: stretch;
   width: 30rem;
   min-height: 100vh;
+  padding-top: 1rem;
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   z-index: 999;
@@ -98,6 +99,7 @@
   .menu {
     width: 100%;
     min-height: 5vh;
+    padding: 0;
     position: relative;
     transform: translateX(0rem);
 
