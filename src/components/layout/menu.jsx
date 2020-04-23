@@ -15,7 +15,7 @@ export default function Menu(props) {
     <div className={props.open ? "menu menu--opened" : "menu"}>
       <div className="menu__header">
         <div className="menu__hambuguer">
-          <IconButton>
+          <IconButton onClick={() => props.toggleMenuMobile()}>
             <MenuIcon />
           </IconButton>
         </div>
@@ -33,7 +33,13 @@ export default function Menu(props) {
           {props.open ? <MenuIconClose /> : <MenuIconOpen />}
         </button>
       </div>
-      <nav className="menu__navigation">
+      <nav
+        className={
+          props.openMobile
+            ? "menu__navigation menu__navigation--opened"
+            : "menu__navigation"
+        }
+      >
         <ul>
           <li>
             <NavLink

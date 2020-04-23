@@ -60,7 +60,7 @@
     width: 20rem;
 
     &--little {
-      background-size: 0;
+      background-image: none;
     }
   }
 
@@ -97,7 +97,9 @@
 @media screen and (max-width: 650px) {
   .menu {
     width: 100%;
+    min-height: 5vh;
     position: relative;
+    transform: translateX(0rem);
 
     &__header {
       justify-content: flex-start;
@@ -109,6 +111,15 @@
 
     &__toggle {
       display: none;
+    }
+
+    &__navigation {
+      margin-top: 0vh;
+      display: none;
+
+      &--opened {
+        display: block;
+      }
     }
   }
 }
