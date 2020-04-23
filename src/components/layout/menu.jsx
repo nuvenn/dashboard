@@ -4,16 +4,27 @@ import PagamentosIcon from "@material-ui/icons/AttachMoney";
 import ConsultasIcon from "@material-ui/icons/ListAlt";
 import MenuIconOpen from "@material-ui/icons/KeyboardArrowRight";
 import MenuIconClose from "@material-ui/icons/KeyboardArrowLeft";
+import MenuIcon from "@material-ui/icons/Menu";
 import { NavLink } from "react-router-dom";
 
 import theme from "../../theme";
+import { IconButton } from "@material-ui/core";
 
 export default function Menu(props) {
   return (
     <div className={props.open ? "menu menu--opened" : "menu"}>
-      <div
-        className={props.open ? "menu__logo" : "menu__logo menu__logo--little"}
-      ></div>
+      <div className="menu__header">
+        <div className="menu__hambuguer">
+          <IconButton>
+            <MenuIcon />
+          </IconButton>
+        </div>
+        <div
+          className={
+            props.open ? "menu__logo" : "menu__logo menu__logo--little"
+          }
+        ></div>
+      </div>
       <div className="menu__toggle">
         <button
           className="menu__toggle__button"

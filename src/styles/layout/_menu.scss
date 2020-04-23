@@ -15,6 +15,16 @@
     transform: translateX(0rem);
   }
 
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__hambuguer {
+    display: none;
+  }
+
   &__toggle {
     float: right;
     display: flex;
@@ -46,9 +56,8 @@
     background-image: $menu-logo;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 5rem;
-    margin: 1.5rem auto;
-    width: 70%;
+    height: 4rem;
+    width: 20rem;
 
     &--little {
       background-size: 0;
@@ -88,9 +97,14 @@
 @media screen and (max-width: 650px) {
   .menu {
     width: 100%;
+    position: relative;
 
-    &__logo {
-      width: 40%;
+    &__header {
+      justify-content: flex-start;
+    }
+
+    &__hambuguer {
+      display: flex;
     }
 
     &__toggle {
