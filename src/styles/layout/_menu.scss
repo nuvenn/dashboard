@@ -27,7 +27,9 @@
   }
 
   &__toggle {
-    float: right;
+    position: absolute;
+    left: 27rem;
+    top: 1.7rem;
     display: flex;
     align-self: flex-end;
     transform: translateX(1.5rem);

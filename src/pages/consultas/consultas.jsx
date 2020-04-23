@@ -17,17 +17,17 @@ export default function Consultas() {
         <Box marginTop={2}>
           <Grid item xs={12} md={6} lg={6} xl={4}>
             <Card>
-              <BarChart />
-            </Card>
-          </Grid>
-          <Grid item xs={12} md={6} lg={6} xl={4}>
-            <Card>
               <LineChart />
             </Card>
           </Grid>
           <Grid item xs={12} md={6} lg={6} xl={4}>
             <Card>
               <DonutChart />
+            </Card>
+          </Grid>
+          <Grid item xs={12} md={6} lg={6} xl={4}>
+            <Card>
+              <BarChart />
             </Card>
           </Grid>
         </Box>

@@ -24,14 +24,14 @@ export default function Menu(props) {
             props.open ? "menu__logo" : "menu__logo menu__logo--little"
           }
         ></div>
-      </div>
-      <div className="menu__toggle">
-        <button
-          className="menu__toggle__button"
-          onClick={() => props.toggleMenu()}
-        >
-          {props.open ? <MenuIconClose /> : <MenuIconOpen />}
-        </button>
+        <div className="menu__toggle">
+          <button
+            className="menu__toggle__button"
+            onClick={() => props.toggleMenu()}
+          >
+            {props.open ? <MenuIconClose /> : <MenuIconOpen />}
+          </button>
+        </div>
       </div>
       <nav
         className={
