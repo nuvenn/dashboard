@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Chart from "react-apexcharts";
 
 export default function LineChart(props) {
+  const [width] = useState(window.innerWidth > 430 ? 430 : "100%");
+
   const chart = {
     options: {
       chart: {
@@ -25,7 +27,7 @@ export default function LineChart(props) {
         options={chart.options}
         series={chart.series}
         type="line"
-        width="430"
+        width={width}
       />
     </>
   );
