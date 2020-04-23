@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0.7rem;
   }
 
   &__hambuguer {
@@ -29,7 +30,7 @@
   &__toggle {
     position: absolute;
     left: 27rem;
-    top: 1.7rem;
+    top: 2.5rem;
     display: flex;
     align-self: flex-end;
     transform: translateX(1.5rem);
