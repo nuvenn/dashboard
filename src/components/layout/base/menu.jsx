@@ -7,7 +7,7 @@ import MenuIconClose from "@material-ui/icons/KeyboardArrowLeft";
 import MenuIcon from "@material-ui/icons/Menu";
 import { NavLink } from "react-router-dom";
 
-import theme from "../../theme";
+import theme from "../../../theme";
 import { IconButton } from "@material-ui/core";
 
 export default function Menu(props) {

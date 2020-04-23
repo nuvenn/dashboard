@@ -1,32 +1,37 @@
-import React, { useState } from "react";
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 import "../../styles/App.scss";
-import Container from "../layout/container";
-import Menu from "../layout/menu";
-import Content from "../layout/content";
+import Container from "../layout/base/container";
+import Menu from "../layout/base/menu";
+import Content from "../layout/base/content";
+import { setOpenMainMenu, setOpenMobileMenu } from "./layoutActions";
 
 export default function Layout(props) {
-  const [open, setOpen] = useState(true);
-  const [openMobile, setOpenMobile] = useState(false);
+  const layout = useSelector((state) => state.layout);
+  const dispatch = useDispatch();
 
   const toggleMenu = function () {
-    open ? setOpen(false) : setOpen(true);
+    layout.openMainMenu
+      ? dispatch(setOpenMainMenu(false))
+      : dispatch(setOpenMainMenu(true));
   };
 
   const toggleMenuMobile = function () {
-    openMobile ? setOpenMobile(false) : setOpenMobile(true);
+    layout.openMobileMenu
+      ? dispatch(setOpenMobileMenu(false))
+      : dispatch(setOpenMobileMenu(true));
   };
-
   return (
     <>
       <Container>
         <Menu
-          open={open}
-          openMobile={openMobile}
+          open={layout.openMainMenu}
+          openMobile={layout.openMobileMenu}
           toggleMenu={toggleMenu}
           toggleMenuMobile={toggleMenuMobile}
         />
-        <Content open={open}>{props.children}</Content>
+        <Content open={layout.openMainMenu}>{props.children}</Content>
       </Container>
     </>
   );

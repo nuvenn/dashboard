@@ -1,9 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 
-import Header from "../../components/layout/header";
-import Box from "../../components/layout/box";
-import Card from "../../components/layout/card";
+import Header from "../../components/layout/base/header";
+import Box from "../../components/layout/ui/box";
+import Card from "../../components/layout/ui/card";
 import BarChart from "../../components/charts/bar";
 import DonutChart from "../../components/charts/donut";
 import LineChart from "../../components/charts/line";

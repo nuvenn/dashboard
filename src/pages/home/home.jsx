@@ -1,6 +1,6 @@
 import React from "react";
 
-import Header from "../../components/layout/header";
+import Header from "../../components/layout/base/header";
 import Layout from "../../components/layout/layout";
 
 export default function Home() {
