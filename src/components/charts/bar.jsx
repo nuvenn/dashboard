@@ -12,6 +12,9 @@ export default function BarChart(props) {
       xaxis: {
         categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
       },
+      fill: {
+        colors: ["#701f38"],
+      },
     },
     series: [
       {
