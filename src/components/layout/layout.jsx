@@ -22,6 +22,7 @@ export default function Layout(props) {
       ? dispatch(setOpenMobileMenu(false))
       : dispatch(setOpenMobileMenu(true));
   };
+
   return (
     <>
       <Container>

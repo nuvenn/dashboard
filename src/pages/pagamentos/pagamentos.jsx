@@ -14,7 +14,7 @@ export default function Pagamentos() {
     <>
       <Layout>
         <Header title="Pagamentos" />
-        <Box marginTop={2}>
+        <Box marginTop={2} marginBottom={2}>
           <Grid item xs={12} md={6} lg={6} xl={4}>
             <Card>
               <BarChart />

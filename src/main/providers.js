@@ -18,7 +18,7 @@ const store = applyMiddleware(multi, thunk, promise)(createStore)(
 export default (props) => {
   return (
     <Provider store={store}>
-      <MuiThemeProvider theme={theme}>{props.children}</MuiThemeProvider>;
+      <MuiThemeProvider theme={theme}>{props.children}</MuiThemeProvider>
     </Provider>
   );
 };
