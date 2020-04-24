@@ -5,6 +5,8 @@ import "../../styles/App.scss";
 import Container from "../layout/base/container";
 import Menu from "../layout/base/menu";
 import Content from "../layout/base/content";
+import Header from "../layout/base/header";
+import Box from "../layout/ui/box";
 import { setOpenMainMenu, setOpenMobileMenu } from "./layoutActions";
 
 export default function Layout(props) {
@@ -32,7 +34,12 @@ export default function Layout(props) {
           toggleMenu={toggleMenu}
           toggleMenuMobile={toggleMenuMobile}
         />
-        <Content open={layout.openMainMenu}>{props.children}</Content>
+        <Content open={layout.openMainMenu}>
+          <Header title={props.title} />
+          <Box marginTop={2} marginBottom={2}>
+            {props.children}
+          </Box>
+        </Content>
       </Container>
     </>
   );
