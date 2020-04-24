@@ -38,3 +38,9 @@ $box-shadow-1: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 //Assets
 $menu-logo: url(../../assets/logo2.png);
 $menu-logo--little: url(../../assets/login_loader_color.png);
+$background-login: linear-gradient(
+    to right bottom,
+    rgba($color-primary, 1),
+    rgba($color-grey-dark, 0.8)
+  ),
+  url(../../assets/startup.jpg);
