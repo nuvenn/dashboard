@@ -1,8 +1,8 @@
 import React from "react";
 import { HashRouter as Router, Switch, Redirect } from "react-router-dom";
 import Home from "../pages/home/home";
-import Consultas from "../pages/consultas/consultas";
-import Pagamentos from "../pages/pagamentos/pagamentos";
+import QuantidadeVinculos from "../pages/quantidadeVinculos/quantidadeVinculos";
+import TotaisFolha from "../pages/totaisFolha/totaisFolha";
 import PrivateRoute from "./privateRoute";
 
 export default () => (
@@ -15,16 +15,16 @@ export default () => (
         component={Home}
       />
       <PrivateRoute
-        path="/consultas/"
-        title="Consultas"
+        path="/quantidadevinculos/"
+        title="Quantidade de Vínculos"
         exact
-        component={Consultas}
+        component={QuantidadeVinculos}
       />
       <PrivateRoute
-        path="/pagamentos/"
-        title="Pagamentos"
+        path="/totaisfolha/"
+        title="Totais de Folha"
         exact
-        component={Pagamentos}
+        component={TotaisFolha}
       />
       <Redirect from="*" to="/home/" />
     </Switch>

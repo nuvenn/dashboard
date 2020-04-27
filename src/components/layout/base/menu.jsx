@@ -1,8 +1,8 @@
 import React from "react";
 import Tooltip from "@material-ui/core/Tooltip";
 import HomeIcon from "@material-ui/icons/Home";
-import PagamentosIcon from "@material-ui/icons/AttachMoney";
-import ConsultasIcon from "@material-ui/icons/ListAlt";
+import QuantidadeVinculosIcon from "@material-ui/icons/PermContactCalendar";
+import TotaisFolhaIcon from "@material-ui/icons/AttachMoney";
 import SairIcon from "@material-ui/icons/Input";
 import MenuIconOpen from "@material-ui/icons/KeyboardArrowRight";
 import MenuIconClose from "@material-ui/icons/KeyboardArrowLeft";
@@ -73,13 +73,13 @@ export default function Menu(props) {
             </Link>
           </li>
           <li>
-            <Link to="/pagamentos/" page="Pagamentos">
-              <PagamentosIcon />
+            <Link to="/quantidadevinculos/" page="Quantidade de vínculos">
+              <QuantidadeVinculosIcon />
             </Link>
           </li>
           <li>
-            <Link to="/consultas/" page="Consultas">
-              <ConsultasIcon />
+            <Link to="/totaisfolha/" page="Totais de Folha">
+              <TotaisFolhaIcon />
             </Link>
           </li>
           <li>
