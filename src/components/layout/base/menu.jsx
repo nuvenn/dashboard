@@ -1,6 +1,6 @@
 import React from "react";
 import Tooltip from "@material-ui/core/Tooltip";
-import HomeIcon from "@material-ui/icons/Home";
+// import HomeIcon from "@material-ui/icons/Home";
 import QuantidadeVinculosIcon from "@material-ui/icons/PermContactCalendar";
 import TotaisFolhaIcon from "@material-ui/icons/AttachMoney";
 import SairIcon from "@material-ui/icons/Input";

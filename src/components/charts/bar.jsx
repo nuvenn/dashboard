@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Chart from "react-apexcharts";
 
 export default function BarChart(props) {
-  const [width] = useState(window.innerWidth > 800 ? 800 : "100%");
+  const [width] = useState(window.innerWidth > 1200 ? 800 : "100%");
 
   const chart = {
     options: {
