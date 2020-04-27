@@ -15,7 +15,10 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.common.greyDark2,
     border: "none",
     boxShadow: "none",
-    padding: 8.5,
+  },
+  toolbar: {
+    paddingLeft: 8,
+    paddingRight: 8,
   },
   title: {
     flexGrow: 1,
@@ -70,7 +73,7 @@ export default function SearchAppBar(props) {
   return (
     <div className={classes.root}>
       <AppBar className={classes.bar} position="static">
-        <Toolbar>
+        <Toolbar className={classes.toolbar}>
           <Typography className={classes.title} variant="h6" noWrap>
             {props.title}
           </Typography>

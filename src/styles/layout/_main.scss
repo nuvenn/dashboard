@@ -1,16 +1,18 @@
 .main {
   width: 100%;
-  padding-left: 6.5rem;
+  padding-left: 10rem;
+  padding-right: 3.5rem;
   transition: all 0.5s;
   will-change: transform, padding;
 
   &--opened {
-    padding-left: 30rem;
+    padding-left: 33.5rem;
   }
 }
 
 @media screen and (max-width: 650px) {
   .main {
-    padding-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

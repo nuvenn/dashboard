@@ -35,8 +35,8 @@ export default function Layout(props) {
           toggleMenuMobile={toggleMenuMobile}
         />
         <Content open={layout.openMainMenu}>
-          <Header title={props.title} />
           <Box marginTop={2} marginBottom={2}>
+            <Header title={props.title} />
             {props.children}
           </Box>
         </Content>
