@@ -2,6 +2,7 @@ import React from "react";
 import HomeIcon from "@material-ui/icons/Home";
 import PagamentosIcon from "@material-ui/icons/AttachMoney";
 import ConsultasIcon from "@material-ui/icons/ListAlt";
+import SairIcon from "@material-ui/icons/Input";
 import MenuIconOpen from "@material-ui/icons/KeyboardArrowRight";
 import MenuIconClose from "@material-ui/icons/KeyboardArrowLeft";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -11,6 +12,10 @@ import theme from "../../../theme";
 import { IconButton } from "@material-ui/core";
 
 export default function Menu(props) {
+  const logout = function () {
+    localStorage.clear();
+  };
+
   return (
     <div className={props.open ? "menu menu--opened" : "menu"}>
       <div className="menu__header">
@@ -78,6 +83,12 @@ export default function Menu(props) {
             >
               Consultas
               <ConsultasIcon />
+            </NavLink>
+          </li>
+          <li>
+            <NavLink onClick={() => logout()} to="/" className="menu__button">
+              Sair
+              <SairIcon />
             </NavLink>
           </li>
         </ul>
