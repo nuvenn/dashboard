@@ -67,11 +67,11 @@ export default function Menu(props) {
         }
       >
         <ul>
-          <li>
+          {/* <li>
             <Link to="/home/" page="Página Inicial">
               <HomeIcon />
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/quantidadevinculos/" page="Quantidade de vínculos">
               <QuantidadeVinculosIcon />

@@ -26,7 +26,7 @@ export default function Login() {
         alteraSenha: "N",
       })
     );
-    router.history.push("/home/");
+    router.history.push("/quantidadevinculos/");
   };
 
   return (
