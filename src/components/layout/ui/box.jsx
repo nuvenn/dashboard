@@ -6,7 +6,12 @@ import Grid from "@material-ui/core/Grid";
 export default function BoxContainer(props) {
   return (
     <>
-      <Box m={props.margin} mt={props.marginTop} mb={props.marginBottom}>
+      <Box
+        justify="center"
+        m={props.margin}
+        mt={props.marginTop}
+        mb={props.marginBottom}
+      >
         <Container maxWidth="xl">
           <Grid container spacing={2} justify={props.justify}>
             {props.children}
