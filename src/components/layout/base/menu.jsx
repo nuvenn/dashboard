@@ -1,4 +1,5 @@
 import React from "react";
+import Tooltip from "@material-ui/core/Tooltip";
 import HomeIcon from "@material-ui/icons/Home";
 import PagamentosIcon from "@material-ui/icons/AttachMoney";
 import ConsultasIcon from "@material-ui/icons/ListAlt";
@@ -10,6 +11,26 @@ import { NavLink } from "react-router-dom";
 
 import theme from "../../../theme";
 import { IconButton } from "@material-ui/core";
+
+const Link = React.forwardRef(function Link(props, ref) {
+  return (
+    <Tooltip title={props.page} placement="right">
+      <div {...props} ref={ref}>
+        <NavLink
+          activeStyle={{
+            backgroundColor: theme.palette.primary.main,
+            color: theme.palette.common.colorWhite,
+          }}
+          to={props.to}
+          className="menu__button"
+        >
+          {props.page}
+          {props.children}
+        </NavLink>
+      </div>
+    </Tooltip>
+  );
+});
 
 export default function Menu(props) {
   const logout = function () {
@@ -47,43 +68,19 @@ export default function Menu(props) {
       >
         <ul>
           <li>
-            <NavLink
-              activeStyle={{
-                backgroundColor: theme.palette.primary.main,
-                color: theme.palette.common.colorWhite,
-              }}
-              to="/home/"
-              className="menu__button"
-            >
-              Pagina Inicial
+            <Link to="/home/" page="Página Inicial">
               <HomeIcon />
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              activeStyle={{
-                backgroundColor: theme.palette.primary.main,
-                color: theme.palette.common.colorWhite,
-              }}
-              to="/pagamentos/"
-              className="menu__button"
-            >
-              Pagamentos
+            <Link to="/pagamentos/" page="Pagamentos">
               <PagamentosIcon />
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              activeStyle={{
-                backgroundColor: theme.palette.primary.main,
-                color: theme.palette.common.colorWhite,
-              }}
-              to="/consultas/"
-              className="menu__button"
-            >
-              Consultas
+            <Link to="/consultas/" page="Consultas">
               <ConsultasIcon />
-            </NavLink>
+            </Link>
           </li>
           <li>
             <NavLink onClick={() => logout()} to="/" className="menu__button">
