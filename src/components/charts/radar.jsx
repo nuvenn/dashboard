@@ -6,17 +6,30 @@ export default function RadarChart(props) {
 
   const chart = {
     options: {
-      labels: ["April", "May", "June", "July", "August", "September"],
-      colors: ["#701f38"],
+      labels: [
+        "Jan",
+        "Fev",
+        "Mar",
+        "Abr",
+        "Mai",
+        "Jun",
+        "Jul",
+        "Ago",
+        "Set",
+        "Out",
+        "Nov",
+        "Dez",
+      ],
+      colors: ["#701f38", "#D23666"],
     },
     series: [
       {
         name: "Radar Series 1",
-        data: [45, 52, 38, 24, 33, 10],
+        data: [45, 52, 38, 24, 23, 10, 15, 22, 33, 35, 35, 30],
       },
       {
         name: "Radar Series 2",
-        data: [26, 21, 20, 6, 8, 15],
+        data: [26, 21, 20, 6, 8, 15, 16, 21, 22, 23, 20, 25],
       },
     ],
   };
