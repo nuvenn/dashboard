@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 
-import BarChart from "../../components/charts/bar";
+import AreaChart from "../../components/charts/area";
 import ScrollableTabs from "../../components/layout/ui/scrollableTabs";
 
 export default function TotaisFolha() {
@@ -17,7 +17,7 @@ export default function TotaisFolha() {
             "Rubrica",
           ]}
           data={{}}
-          content={<BarChart />}
+          content={<AreaChart />}
         />
       </Grid>
     </>
