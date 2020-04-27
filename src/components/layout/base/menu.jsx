@@ -68,23 +68,23 @@ export default function Menu(props) {
       >
         <ul>
           {/* <li>
-            <Link to="/home/" page="Página Inicial">
+            <Link to="/home/" page="PÁGINA INICIAL">
               <HomeIcon />
             </Link>
           </li> */}
           <li>
-            <Link to="/quantidadevinculos/" page="Quantidade de vínculos">
+            <Link to="/quantidadevinculos/" page="QUANTIDADE DE VÍNCULOS">
               <QuantidadeVinculosIcon />
             </Link>
           </li>
           <li>
-            <Link to="/totaisfolha/" page="Totais de Folha">
+            <Link to="/totaisfolha/" page="TOTAIS DE FOLHA">
               <TotaisFolhaIcon />
             </Link>
           </li>
           <li>
             <NavLink onClick={() => logout()} to="/" className="menu__button">
-              Sair
+              SAIR
               <SairIcon />
             </NavLink>
           </li>
