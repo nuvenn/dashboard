@@ -124,10 +124,16 @@
 
     &__navigation {
       margin-top: 0vh;
-      display: none;
+      max-height: 0;
+      overflow: hidden;
+      -webkit-transition: max-height 0.8s;
+      -moz-transition: max-height 0.8s;
+      -ms-transition: max-height 0.8s;
+      -o-transition: max-height 0.8s;
+      transition: max-height 0.8s;
 
       &--opened {
-        display: block;
+        max-height: 95vh;
       }
     }
   }
