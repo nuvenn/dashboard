@@ -25,6 +25,12 @@ export default function Layout(props) {
       : dispatch(setOpenMobileMenu(true));
   };
 
+  const logout = function () {
+    dispatch(setOpenMainMenu(true));
+    dispatch(setOpenMobileMenu(false));
+    localStorage.clear();
+  };
+
   return (
     <>
       <Container>
@@ -33,6 +39,7 @@ export default function Layout(props) {
           openMobile={layout.openMobileMenu}
           toggleMenu={toggleMenu}
           toggleMenuMobile={toggleMenuMobile}
+          logout={logout}
         />
         <Content open={layout.openMainMenu}>
           <Box marginTop={2} marginBottom={2}>

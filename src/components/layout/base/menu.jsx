@@ -33,10 +33,6 @@ const Link = React.forwardRef(function Link(props, ref) {
 });
 
 export default function Menu(props) {
-  const logout = function () {
-    localStorage.clear();
-  };
-
   return (
     <div className={props.open ? "menu menu--opened" : "menu"}>
       <div className="menu__header">
@@ -83,7 +79,11 @@ export default function Menu(props) {
             </Link>
           </li>
           <li>
-            <NavLink onClick={() => logout()} to="/" className="menu__button">
+            <NavLink
+              onClick={() => props.logout()}
+              to="/"
+              className="menu__button"
+            >
               SAIR
               <SairIcon />
             </NavLink>
